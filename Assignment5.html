@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Example</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #34495e;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #2980b9;
+    }
+
+    img {
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      margin: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>This is an image example</h1>
+  <h2>This is an image of space</h2>
+
+  <div class="image-container">
+    <!-- Image from an online URL -->
+    <img src="https://scitechdaily.com/images/Solar-System-Planets-Orbits-777x622.jpg" alt="Space Image" width="300" height="200">
+
+    <!-- Image from a local file -->
+    <img src="https://cdn.hswstatic.com/gif/gettyimages-139494347.jpg" alt="Milky Way" width="300" height="200">
+  </div>
+
+</body>
+</html>
